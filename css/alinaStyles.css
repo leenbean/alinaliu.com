@@ -1,6 +1,6 @@
 ﻿/*#region fonts*/
 .t1{
-    font-size: 22px;
+    font-size: 24px;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
     font-style: normal;
 }
@@ -80,9 +80,23 @@ a{
     display: block;
     margin-top: 12px;
 }
-.abc:hover, .abc:hover > .hiddenLink{
+.abc:hover{
     color: #A349A4;
     opacity: 1;
+    margin-left: -0.1vw;
+    transition: all 0.3s ease-in 0s;
+}
+
+.abc:hover > .hiddenLink{
+    color: #A349A4;
+    opacity: 1;
+    margin-left: -0.005vw;
+    transition: all 0.3s ease-in 0s;
+}
+
+.highlightPage{
+    color: #A349A4;
+    border-top: 1px solid;
 }
 
 .hiddenLink{
@@ -91,6 +105,7 @@ a{
 .hiddenLink:hover{
     opacity: 1;
     color: #A349A4;
+    transition: all 0.3s ease-in 0s;
 }
 
 footer{
@@ -142,8 +157,8 @@ div.footerElements{
     left: 0;
     position: absolute;
     background-color: #888888;
-	opacity:0;
-	transition: all 0.3s ease-in 0s;
+    opacity:0;
+    transition: all 0.3s ease-in 0s;
     overflow: hidden;
     display: flex;
 }
@@ -152,7 +167,7 @@ div.footerElements{
     font-size: 22px;
     opacity: 0;
     transform: scale(1.6);
-	transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
     position: absolute;
     top: 35%;
     width: 100%;
@@ -167,14 +182,14 @@ div.footerElements{
 
 #pieceListItem:hover div{
     opacity:0.5; 
-	transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 
 #pieceListItem:hover span{
-	opacity:1; 
+    opacity:1; 
     transform: scale(1);
-	transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 ::-webkit-scrollbar{
@@ -219,11 +234,11 @@ ul.li.img:hover{
 .logoContent{
     display: table-cell;
     vertical-align: middle;
-    padding: 75px 0px 0px 0px;
+    padding: 11vh 0px 0px 0px;
 }
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     padding: 5px;
     opacity: 0.4;
     transition: all 0.2s ease-in 0s;
